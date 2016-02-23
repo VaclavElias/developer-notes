@@ -62,6 +62,7 @@ There will be a new IP Address added to the server after recovery.
 2. Get-AzureReservedIP *..list reserved ips*
 3. Set-AzureReservedIPAssociation -ReservedIPName "*ReservedName*" -ServiceName "*YourServiceName*" *..assing reserved IP to the server*
 
+
 ### Reserve IP 
 1. http://clemmblog.azurewebsites.net/convert-existing-dynamic-vip-reserved-ip-addresses-azure/
 2. New-AzureReservedIP -ReservedIPName "vip01" -Location "West Europe" -ServiceName "viptest01"
