@@ -5,6 +5,7 @@ Notes for day to day work.
 2. [Git] (git)
 3. [SQL Server] (#sql-server)
 4. [WordPress] (#wordpress)
+5. [Linux] (#linux)
  
 
 ## Asp.Net Core 1.0
@@ -39,5 +40,20 @@ WP-DB-Backup |Austin Matzko | WordPress Database Backup
 Delete Expired Transients || crap stored as posts in db backup
 Antivirus | Sergej Muller |
 Check Email | |
+
+## Linux
+- sudo command
+- df [-h] *..disk information*
+- yum install htop, check-update
+- reboot -h now
+- systemctl start/restart/status/stop/enable mariadb/waagent
+- tab+tab auto completition
+
+### Vi Editor
+ - sudo vi /var/log/mariadb/mariadb.log 
+ - G - end of file
+ - :q! - type to exit type
+ - ZZ-exit
+
 
 
