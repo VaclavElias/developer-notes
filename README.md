@@ -7,5 +7,7 @@ Notes for day to day work.
 ## WordPress
 Must plugins.
 
-...My Private Site - jonradio Private Site (David Gewirtz) - to make it private, enable manually
+Plugin Name | Author | Note
+---|---|---
+My Private Site | Jonradio Private Site (David Gewirtz) | to make it private, enable manually
 
