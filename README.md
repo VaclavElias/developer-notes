@@ -57,6 +57,7 @@ There will be a new IP Address added to the server after recovery.
 3. IP Address needs to be updated
 4. Endpoints might be different, double check them
 
+#### Assign IP
 
 1. Add-AzureAccount *..authenticate*
 2. Get-AzureReservedIP *..list reserved ips*
