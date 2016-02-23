@@ -20,15 +20,12 @@ Notes for day to day work.
 - git config --global core.autocrlf true *..on Windows*
 
 ## SQL Serveer
-```sql
+```plsql
 EXEC sp_change_users_login 'UPDATE_ONE','something','something'`
 EXEC sp_change_users_login 'REPORT'
-CREATE CREDENTIAL *YourNameCredential* WITH IDENTITY='*YourIdentity*', SECRET='*YourSecretKey*';
-RESTORE DATABASE *DatabaseName* FROM URL ='*AzureUrl*' WITH CREDENTIAL='*YourNameCredential*',STATS= 5
+CREATE CREDENTIAL YourNameCredential WITH IDENTITY='YourIdentity', SECRET='YourSecretKey';
+RESTORE DATABASE DatabaseName FROM URL ='AzureUrl' WITH CREDENTIAL='YourNameCredential',STATS= 5
 ```
-
-
-
 
 ## WordPress
 Must plugins.
