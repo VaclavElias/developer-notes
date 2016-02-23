@@ -15,8 +15,8 @@ Notes for day to day work.
 - git tag -a v1.1.0.4rtm -m "Release version"
 - git push origin master
 - git push --tags
-- git checkout develop **..switching**
-- Windows: git config --global core.autocrlf true
+- git checkout develop *..switching*
+- git config --global core.autocrlf true *..on Winodws*
 
 ## WordPress
 Must plugins.
