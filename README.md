@@ -3,7 +3,7 @@ Notes for day to day work.
 
 1. Asp.Net Core 1.0
 2. Git
-3. WordPress
+3. WordPress (#WordPress)
 4. 
 
 ## Asp.Net Core 1.0
