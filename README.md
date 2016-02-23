@@ -1,8 +1,12 @@
 # Developer Notes
 Notes for day to day work.
 
-1. WordPress
-2. 
+1. Asp.Net Core 1.0
+2. WordPress
+3. 
+
+## Asp.Net Core 1.0
+- Mail - https://github.com/jstedfast/MailKit
 
 ## WordPress
 Must plugins.
