@@ -48,6 +48,22 @@ Check Email | |
 3. Linux or Windows *..create D1, to get the Cloud Service and then stop it, remove or downgrade it*
 4. Linux create A0 *..no need standard to get HDD 70 as image is 30GB ??*
 5. Install Dynamic Compression for IIS
+6. 
+### VM Recovery
+There will be a new IP Address added to the server after recovery.
+1. Make sure the name remains the same
+2. If the website was linked through CNAME this should not be a problem
+3. IP Address needs to be updated
+4. Endpoints might be different, double check them
+
+1. Add-AzureAccount *..authenticate*
+2. Get-AzureReservedIP *..list reserved ips*
+3. Set-AzureReservedIPAssociation -ReservedIPName "*ReservedName*" -ServiceName "*YourServiceName*" *..assing reserved IP to the server*
+
+### Reserve IP 
+1. http://clemmblog.azurewebsites.net/convert-existing-dynamic-vip-reserved-ip-addresses-azure/
+2. New-AzureReservedIP -ReservedIPName "vip01" -Location "West Europe" -ServiceName "viptest01"
+
 
 ## Linux
 - sudo command
