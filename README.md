@@ -5,9 +5,9 @@ Notes for day to day work.
 2. [Git] (git)
 3. [SQL Server] (#sql-server)
 4. [WordPress] (#wordpress)
-5. [Linux] (#linux)
+5. [Azure] (#azure)
+6. [Linux] (#linux)
  
-
 ## Asp.Net Core 1.0
 - Mail - https://github.com/jstedfast/MailKit
 
@@ -40,6 +40,14 @@ WP-DB-Backup |Austin Matzko | WordPress Database Backup
 Delete Expired Transients || crap stored as posts in db backup
 Antivirus | Sergej Muller |
 Check Email | |
+
+## Azure 
+### VM
+1. Create Virtual Network *..in desired location* 
+2. Create Storage *..same location, no need to create a container*
+3. Linux or Windows *..create D1, to get the Cloud Service and then stop it, remove or downgrade it*
+4. Linux create A0 *..no need standard to get HDD 70 as image is 30GB ??*
+5. Install Dynamic Compression for IIS
 
 ## Linux
 - sudo command
