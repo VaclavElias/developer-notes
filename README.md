@@ -1,9 +1,9 @@
 # Developer Notes
 Notes for day to day work.
 
-1. [Asp.Net Core 1.0] (asp.netcore1.0)
+1. [Asp.Net Core 1.0] (aspnet-core-10)
 2. [Git] (git)
-3. [SQL Server] (#sqlserver)
+3. [SQL Server] (#sql-server)
 4. [WordPress] (#wordpress)
  
 
@@ -20,9 +20,8 @@ Notes for day to day work.
 - git config --global core.autocrlf true *..on Windows*
 
 ## SQL Serveer
-- EXEC sp_change_users_login 'UPDATE_ONE','something','something'
+- 'EXEC sp_change_users_login 'UPDATE_ONE','something','something' '
 - EXEC sp_change_users_login 'REPORT'
-
 - CREATE CREDENTIAL *YourNameCredential* WITH IDENTITY='*YourIdentity*', SECRET='*YourSecretKey*';
 - RESTORE DATABASE *DatabaseName* FROM URL ='*AzureUrl*' WITH CREDENTIAL='*YourNameCredential*',STATS= 5
 
