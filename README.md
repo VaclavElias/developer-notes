@@ -19,7 +19,7 @@ Notes for day to day work.
 - git checkout develop *..switching*
 - git config --global core.autocrlf true *..on Windows*
 
-## SQL Serveer
+## SQL Server
 ```plsql
 EXEC sp_change_users_login 'UPDATE_ONE','something','something'`
 EXEC sp_change_users_login 'REPORT'
