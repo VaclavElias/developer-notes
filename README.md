@@ -20,6 +20,10 @@ Notes for day to day work.
 - git config --global core.autocrlf true *..on Windows*
 
 ## SQL Serveer
+```sql
+EXEC sp_change_users_login 'UPDATE_ONE','something','something'`
+EXEC sp_change_users_login 'REPORT'
+```
 -`EXEC sp_change_users_login 'UPDATE_ONE','something','something'`
 - EXEC sp_change_users_login 'REPORT'
 - CREATE CREDENTIAL *YourNameCredential* WITH IDENTITY='*YourIdentity*', SECRET='*YourSecretKey*';
