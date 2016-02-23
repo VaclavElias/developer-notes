@@ -51,6 +51,7 @@ Check Email | |
  
 ### VM Recovery
 There will be a new IP Address added to the server after recovery.
+
 1. Make sure the name remains the same
 2. If the website was linked through CNAME this should not be a problem
 3. IP Address needs to be updated
