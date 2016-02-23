@@ -48,7 +48,7 @@ Check Email | |
 3. Linux or Windows *..create D1, to get the Cloud Service and then stop it, remove or downgrade it*
 4. Linux create A0 *..no need standard to get HDD 70 as image is 30GB ??*
 5. Install Dynamic Compression for IIS
-6. 
+ 
 ### VM Recovery
 There will be a new IP Address added to the server after recovery.
 1. Make sure the name remains the same
