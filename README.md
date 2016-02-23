@@ -1,10 +1,11 @@
 # Developer Notes
 Notes for day to day work.
 
-1. Asp.Net Core 1.0
-2. Git
-3. [WordPress] (#wordpress)
-4. 
+1. [Asp.Net Core 1.0] (asp.netcore1.0)
+2. [Git] (git)
+3. [SQL Server] (#sqlserver)
+4. [WordPress] (#wordpress)
+ 
 
 ## Asp.Net Core 1.0
 - Mail - https://github.com/jstedfast/MailKit
@@ -16,7 +17,16 @@ Notes for day to day work.
 - git push origin master
 - git push --tags
 - git checkout develop *..switching*
-- git config --global core.autocrlf true *..on Winodws*
+- git config --global core.autocrlf true *..on Windows*
+
+## SQL Serveer
+- EXEC sp_change_users_login 'UPDATE_ONE','something','something'
+- EXEC sp_change_users_login 'REPORT'
+
+- CREATE CREDENTIAL *YourNameCredential* WITH IDENTITY='*YourIdentity*', SECRET='*YourSecretKey*';
+- RESTORE DATABASE *DatabaseName* FROM URL ='*AzureUrl*' WITH CREDENTIAL='*YourNameCredential*',STATS= 5
+
+
 
 ## WordPress
 Must plugins.
