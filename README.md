@@ -9,7 +9,10 @@ Notes for day to day work.
 6. [Linux] (#linux)
  
 ## Asp.Net Core 1.0
+- Custom View Engine - http://weblogs.asp.net/imranbaloch/custom-viewengine-aspnet5-mvc6
 - Mail - https://github.com/jstedfast/MailKit
+- Minify Html - https://github.com/deanhume/html-minifier
+- MySQL + EF6 - http://dan.cx/2015/08/entity-framework-6-mysql-aspnet 
 
 ## Git
 - git fetch origin
