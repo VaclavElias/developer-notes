@@ -81,7 +81,7 @@ There will be a new IP Address added to the server after recovery.
 ## Linux
 - sudo command
 - df [-h] *..disk information*
-- yum install htop, check-update
+- yum install htop, check-update | apt-get update, upgrade, dist-upgrade
 - reboot -h now
 - systemctl start/restart/status/stop/enable mariadb/waagent
 - tab+tab auto completition
