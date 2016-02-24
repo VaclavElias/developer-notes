@@ -11,6 +11,7 @@ Notes for day to day work.
 ## Asp.Net Core 1.0
 - _Layout.Mobile.cshtml
 - Custom View Engine - http://weblogs.asp.net/imranbaloch/custom-viewengine-aspnet5-mvc6
+- Dependecy Injection - http://odetocode.com/blogs/scott/archive/2016/02/18/avoiding-the-service-locator-pattern-in-asp-net-core.aspx
 - Gooogle Capcha - http://www.codeproject.com/Articles/1018668/FETCH-Retrieve-data-from-a-remote-web-server-with
 - Gooogle Capcha - https://www.youtube.com/watch?v=HcSEU_BZwDw
 - Mail - https://github.com/jstedfast/MailKit, http://stevejgordon.co.uk/how-to-send-emails-in-asp-net-core-1-0
