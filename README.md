@@ -15,6 +15,7 @@ Notes for day to day work.
 - Gooogle Capcha - http://www.codeproject.com/Articles/1018668/FETCH-Retrieve-data-from-a-remote-web-server-with
 - Gooogle Capcha - https://www.youtube.com/watch?v=HcSEU_BZwDw
 - Mail - https://github.com/jstedfast/MailKit, http://stevejgordon.co.uk/how-to-send-emails-in-asp-net-core-1-0
+- Middleware - Sitemap - http://dotnetthoughts.net/generate-dynamic-xml-sitemaps-in-aspnet5
 - Minify Html - https://github.com/deanhume/html-minifier
 - MySQL + EF6 - http://dan.cx/2015/08/entity-framework-6-mysql-aspnet 
 - SQL Lite + EF7 - http://damienbod.com/2015/08/30/asp-net-5-with-sqlite-and-entity-framework-7/
