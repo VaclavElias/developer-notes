@@ -1,8 +1,8 @@
 # Developer Notes
 Notes for day to day work.
 
-1. [Asp.Net Core 1.0] (aspnet-core-10)
-2. [Git] (git)
+1. [Asp.Net Core 1.0] (#aspnet-core-10)
+2. [Git] (#git)
 3. [SQL Server] (#sql-server)
 4. [WordPress] (#wordpress)
 5. [Azure] (#azure)
@@ -91,7 +91,7 @@ There will be a new IP Address added to the server after recovery.
  - sudo vi /var/log/mariadb/mariadb.log 
  - G - end of file
  - :q! - type to exit type
- - ZZ-exit
+ - ZZ - exit & save
 
 
 
