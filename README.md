@@ -47,7 +47,8 @@ My Private Site | David Gewirtz | to make it private, enable manually
 WP Smush | WPMU DEV | to optimise images
 Revision Control | Dion Hulse | to have only a few revisions
 BackUpWordPress | Human Made Limited | WordPress Database Backup (Email, scheduled)
-WP-DB-Backup | Austin Matzko | WordPress Database Backup  (Email, scheduled)
+~~WP-DB-Backup~~ | Austin Matzko | WordPress Database Backup  (Email, scheduled)
+Transient Cleaner | Code Art | Clean expired transients from your options table
 Delete Expired Transients || crap stored as posts in db backup
 Antivirus | Sergej Muller |
 Check Email | |
