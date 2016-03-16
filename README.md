@@ -31,6 +31,11 @@ Notes for day to day work.
 - git config --global core.autocrlf true *..on Windows*
 
 ## SQL Server
+- STRING_SPLIT - returns table with a column named value
+```plsql
+SELECT * FROM STRING_SPLIT(‘Lorem ipsum dolor sit amet.’, ”)
+```
+
 ```plsql
 EXEC sp_change_users_login 'UPDATE_ONE','something','something'
 EXEC sp_change_users_login 'REPORT'
