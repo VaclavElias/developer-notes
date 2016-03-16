@@ -35,7 +35,7 @@ Notes for day to day work.
 ```plsql
 SELECT * FROM STRING_SPLIT(‘Lorem ipsum dolor sit amet.’, ”)
 ```
-
+- other handy bits
 ```plsql
 EXEC sp_change_users_login 'UPDATE_ONE','something','something'
 EXEC sp_change_users_login 'REPORT'
