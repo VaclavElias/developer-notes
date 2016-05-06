@@ -31,9 +31,13 @@ Notes for day to day work.
 - git config --global core.autocrlf true *..on Windows*
 
 ## SQL Server
-- STRING_SPLIT - returns table with a column named value
+- STRING_SPLIT - returns table with a column named value (from SQL Server 2016)
 ```plsql
 SELECT * FROM STRING_SPLIT(‘Lorem ipsum dolor sit amet.’, ”)
+```
+- String split - temp alternative for small strings
+```plsql
+SELECT Charindex(','+cast(userID as varchar(8000))+',', @Ids)
 ```
 - other handy bits
 ```plsql
