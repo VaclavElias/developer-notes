@@ -37,7 +37,7 @@ SELECT * FROM STRING_SPLIT(‘Lorem ipsum dolor sit amet.’, ”)
 ```
 - String split - temp alternative for small strings
 ```plsql
-SELECT Charindex(','+cast(userID as varchar(8000))+',', @Ids)
+SELECT Charindex(','+cast(id as varchar(8000))+',', @Ids)
 ```
 - other handy bits
 ```plsql
