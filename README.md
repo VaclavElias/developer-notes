@@ -5,8 +5,9 @@ Notes for day to day work.
 2. [Git] (#git)
 3. [SQL Server] (#sql-server)
 4. [WordPress] (#wordpress)
-5. [Azure] (#azure)
-6. [Linux] (#linux)
+5. [Let's Encrypt] (#let-s-encrypt)
+6. [Azure] (#azure)
+7. [Linux] (#linux)
  
 ## Asp.Net Core 1.0
 - _Layout.Mobile.cshtml
@@ -64,6 +65,9 @@ Transient Cleaner | Code Art | Clean expired transients from your options table
 Delete Expired Transients || crap stored as posts in db backup
 Antivirus | Sergej Muller |
 Check Email | |
+
+## Let's Encrypt
+- letsencrypt.ext --test
 
 ## Azure 
 ### VM
