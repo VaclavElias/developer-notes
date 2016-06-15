@@ -67,7 +67,7 @@ Antivirus | Sergej Muller |
 Check Email | |
 
 ## Let's Encrypt
-- letsencrypt.ext --test
+- letsencrypt.exe --test
 
 ## Azure 
 ### VM
