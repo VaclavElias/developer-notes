@@ -10,7 +10,7 @@ Notes for day to day work.
  
 ## Asp.Net Core 1.0
 - _Layout.Mobile.cshtml
-- Bundling https://github.com/Shazwazza/Smidge
+- [Bundling] (https://github.com/Shazwazza/Smidge)
 - Bundling https://visualstudiogallery.msdn.microsoft.com/9ec27da7-e24b-4d56-8064-fd7e88ac1c40
 - Custom View Engine - http://weblogs.asp.net/imranbaloch/custom-viewengine-aspnet5-mvc6
 - Data Encryption - https://docs.asp.net/en/latest/security/data-protection/using-data-protection.html
