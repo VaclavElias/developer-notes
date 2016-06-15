@@ -5,7 +5,7 @@ Notes for day to day work.
 2. [Git] (#git)
 3. [SQL Server] (#sql-server)
 4. [WordPress] (#wordpress)
-5. [Let's Encrypt] (#let-s-encrypt)
+5. [Let's Encrypt] (#lets-encrypt)
 6. [Azure] (#azure)
 7. [Linux] (#linux)
  
