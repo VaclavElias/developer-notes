@@ -22,6 +22,7 @@ Notes for day to day work.
 - Middleware - Sitemap - http://dotnetthoughts.net/generate-dynamic-xml-sitemaps-in-aspnet5
 - Minify Html - https://github.com/deanhume/html-minifier
 - MySQL + EF6 - http://dan.cx/2015/08/entity-framework-6-mysql-aspnet 
+- Strongly Typed Configuration Settings - https://weblog.west-wind.com/posts/2016/May/23/Strongly-Typed-Configuration-Settings-in-ASPNET-Core
 - SQL Lite + EF7 - http://damienbod.com/2015/08/30/asp-net-5-with-sqlite-and-entity-framework-7/
 
 ## Git
