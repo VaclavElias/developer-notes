@@ -14,14 +14,14 @@ Notes for day to day work.
 - [Custom View Engine] (http://weblogs.asp.net/imranbaloch/custom-viewengine-aspnet5-mvc6)
 - [Data Encryption] (https://docs.asp.net/en/latest/security/data-protection/using-data-protection.html)
 - [Dependecy Injection] (http://odetocode.com/blogs/scott/archive/2016/02/18/avoiding-the-service-locator-pattern-in-asp-net-core.aspx)
-- [Gooogle Capcha] (http://www.codeproject.com/Articles/1018668/FETCH-Retrieve-data-from-a-remote-web-server-with), [Gooogle Capcha] (https://www.youtube.com/watch?v=HcSEU_BZwDw)
-- Let's Encrypt - https://weblog.west-wind.com/posts/2016/Feb/22/Using-Lets-Encrypt-with-IIS-on-Windows
-- Mail - https://github.com/jstedfast/MailKit, http://stevejgordon.co.uk/how-to-send-emails-in-asp-net-core-1-0
-- Middleware - Sitemap - http://dotnetthoughts.net/generate-dynamic-xml-sitemaps-in-aspnet5
-- Minify Html - https://github.com/deanhume/html-minifier
-- MySQL + EF6 - http://dan.cx/2015/08/entity-framework-6-mysql-aspnet 
-- Strongly Typed Configuration Settings - https://weblog.west-wind.com/posts/2016/May/23/Strongly-Typed-Configuration-Settings-in-ASPNET-Core
-- SQL Lite + EF7 - http://damienbod.com/2015/08/30/asp-net-5-with-sqlite-and-entity-framework-7/
+- [Google Capcha from CodeProject] (http://www.codeproject.com/Articles/1018668/FETCH-Retrieve-data-from-a-remote-web-server-with), [Google Capcha example on YouTube] (https://www.youtube.com/watch?v=HcSEU_BZwDw)
+- [Let's Encrypt in IIS] (https://weblog.west-wind.com/posts/2016/Feb/22/Using-Lets-Encrypt-with-IIS-on-Windows)
+- [Mailkit] (https://github.com/jstedfast/MailKit), [mail] (http://stevejgordon.co.uk/how-to-send-emails-in-asp-net-core-1-0)
+- [Middleware - Sitemap] (http://dotnetthoughts.net/generate-dynamic-xml-sitemaps-in-aspnet5)
+- [Minify Html] (https://github.com/deanhume/html-minifier)
+- [MySQL + EF6] (http://dan.cx/2015/08/entity-framework-6-mysql-aspnet)
+- [Strongly Typed Configuration Settings] (https://weblog.west-wind.com/posts/2016/May/23/Strongly-Typed-Configuration-Settings-in-ASPNET-Core)
+- [SQL Lite + EF7] (http://damienbod.com/2015/08/30/asp-net-5-with-sqlite-and-entity-framework-7/)
 
 ## Git
 - git fetch origin
