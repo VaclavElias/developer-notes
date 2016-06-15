@@ -10,15 +10,11 @@ Notes for day to day work.
  
 ## Asp.Net Core 1.0
 - _Layout.Mobile.cshtml
-- <a href="http://example.com/" target="_blank">example</a>
-- <a target="_blank" href="https://github.com/Shazwazza/Smidge">Bundling</a>
-- [Bundling] (https://github.com/Shazwazza/Smidge), <a target="_blank" href="https://visualstudiogallery.msdn.microsoft.com/9ec27da7-e24b-4d56-8064-fd7e88ac1c40">bundling from Visual Studio</a>
-- Bundling https://visualstudiogallery.msdn.microsoft.com/9ec27da7-e24b-4d56-8064-fd7e88ac1c40
-- Custom View Engine - http://weblogs.asp.net/imranbaloch/custom-viewengine-aspnet5-mvc6
-- Data Encryption - https://docs.asp.net/en/latest/security/data-protection/using-data-protection.html
-- Dependecy Injection - http://odetocode.com/blogs/scott/archive/2016/02/18/avoiding-the-service-locator-pattern-in-asp-net-core.aspx
-- Gooogle Capcha - http://www.codeproject.com/Articles/1018668/FETCH-Retrieve-data-from-a-remote-web-server-with
-- Gooogle Capcha - https://www.youtube.com/watch?v=HcSEU_BZwDw
+- [Bundling] (https://github.com/Shazwazza/Smidge), [bundling from Visual Studuio] (https://visualstudiogallery.msdn.microsoft.com/9ec27da7-e24b-4d56-8064-fd7e88ac1c40)
+- [Custom View Engine] (http://weblogs.asp.net/imranbaloch/custom-viewengine-aspnet5-mvc6)
+- [Data Encryption] (https://docs.asp.net/en/latest/security/data-protection/using-data-protection.html)
+- [Dependecy Injection] (http://odetocode.com/blogs/scott/archive/2016/02/18/avoiding-the-service-locator-pattern-in-asp-net-core.aspx)
+- [Gooogle Capcha] (http://www.codeproject.com/Articles/1018668/FETCH-Retrieve-data-from-a-remote-web-server-with), [Gooogle Capcha] (https://www.youtube.com/watch?v=HcSEU_BZwDw)
 - Let's Encrypt - https://weblog.west-wind.com/posts/2016/Feb/22/Using-Lets-Encrypt-with-IIS-on-Windows
 - Mail - https://github.com/jstedfast/MailKit, http://stevejgordon.co.uk/how-to-send-emails-in-asp-net-core-1-0
 - Middleware - Sitemap - http://dotnetthoughts.net/generate-dynamic-xml-sitemaps-in-aspnet5
