@@ -10,6 +10,7 @@ Notes for day to day work.
  
 ## Asp.Net Core 1.0
 - _Layout.Mobile.cshtml
+- <a href="http://example.com/" target="_blank">example</a>
 - <a target="_blank" href="https://github.com/Shazwazza/Smidge">Bundling</a>
 - [Bundling] (https://github.com/Shazwazza/Smidge), <a target="_blank" href="https://visualstudiogallery.msdn.microsoft.com/9ec27da7-e24b-4d56-8064-fd7e88ac1c40">bundling from Visual Studio</a>
 - Bundling https://visualstudiogallery.msdn.microsoft.com/9ec27da7-e24b-4d56-8064-fd7e88ac1c40
