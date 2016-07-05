@@ -23,6 +23,7 @@ Notes for day to day work.
 - [MySQL + EF6] (http://dan.cx/2015/08/entity-framework-6-mysql-aspnet)
 - [Strongly Typed Configuration Settings] (https://weblog.west-wind.com/posts/2016/May/23/Strongly-Typed-Configuration-Settings-in-ASPNET-Core)
 - [SQL Lite + EF7] (http://damienbod.com/2015/08/30/asp-net-5-with-sqlite-and-entity-framework-7/)
+- [Asp.Net Core on Ubuntu - Multihosting] (https://developingsoftware.com/aspnetcore-ubuntu#configure-nginx-as-a-reverse-proxy-to-asp.net-core) 
 
 ## Git
 - git fetch origin
