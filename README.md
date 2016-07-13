@@ -8,6 +8,7 @@ Notes for day to day work.
 5. [Let's Encrypt] (#lets-encrypt)
 6. [Azure] (#azure)
 7. [Linux] (#linux)
+8. [Other Handy Tools] (#other-handy-tools)
  
 ## Asp.Net Core 1.0
 - _Layout.Mobile.cshtml
@@ -112,5 +113,7 @@ There will be a new IP Address added to the server after recovery.
  - :q! - type to exit type
  - ZZ - exit & save
 
+### Other Handy Tools
+- http://hangfire.io/overview.html create, process and manage your background jobs
 
 
