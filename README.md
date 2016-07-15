@@ -8,7 +8,7 @@ Notes for day to day work.
 5. [Let's Encrypt] (#lets-encrypt)
 6. [Azure] (#azure)
 7. [Linux] (#linux)
-8. [Knockout.js] (#Knockout.js)
+8. [Knockout.js] (#Knockoutjs)
 9. [Other Handy Tools] (#other-handy-tools)
  
 ## Asp.Net Core 1.0
