@@ -8,7 +8,8 @@ Notes for day to day work.
 5. [Let's Encrypt] (#lets-encrypt)
 6. [Azure] (#azure)
 7. [Linux] (#linux)
-8. [Other Handy Tools] (#other-handy-tools)
+8. [Knockout.js] (#Knockout.js)
+9. [Other Handy Tools] (#other-handy-tools)
  
 ## Asp.Net Core 1.0
 - _Layout.Mobile.cshtml
@@ -113,6 +114,9 @@ There will be a new IP Address added to the server after recovery.
  - G - end of file
  - :q! - type to exit type
  - ZZ - exit & save
+
+### Knockout.js
+- debug: ko.dataFor($0)
 
 ### Other Handy Tools
 - http://hangfire.io/overview.html create, process and manage your background jobs
