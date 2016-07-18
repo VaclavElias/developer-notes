@@ -108,6 +108,7 @@ There will be a new IP Address added to the server after recovery.
 - reboot -h now
 - systemctl start/restart/status/stop/enable mariadb/waagent
 - tab+tab auto completition
+- midnight commander - Norton like Commander
 
 ### Vi Editor
  - sudo vi /var/log/mariadb/mariadb.log 
