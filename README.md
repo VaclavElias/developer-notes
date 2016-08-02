@@ -27,6 +27,7 @@ Notes for day to day work.
 - [SQL Lite + EF7] (http://damienbod.com/2015/08/30/asp-net-5-with-sqlite-and-entity-framework-7/)
 - [Asp.Net Core on Ubuntu - Multihosting] (https://developingsoftware.com/aspnetcore-ubuntu#configure-nginx-as-a-reverse-proxy-to-asp.net-core) 
 - [Login/Logout through REST] (https://www.illucit.com/blog/2016/04/asp-net-5-mvc-6-identity-authentication/)
+- [ASP.NET Core Multi-tenancy] (http://benfoster.io/blog/aspnet-core-multi-tenancy-data-isolation-with-entity-framework)
 
 ## Git
 - git fetch origin
