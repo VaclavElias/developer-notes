@@ -11,6 +11,7 @@ Notes for day to day work.
 8. [Knockout.js] (#knockoutjs)
 9. [Other Handy Tools] (#other-handy-tools)
 10. [Visual Studio 15] (#visual-studio-15)
+11. [Other] (#other)
  
 ## Asp.Net Core 1.0
 - _Layout.Mobile.cshtml
@@ -126,3 +127,7 @@ There will be a new IP Address added to the server after recovery.
 
 ### Visual Studio 15
 - .editorconfig - overrides personal preferences, use in teams
+
+### Other
+- Print Spooler
+- Windows Audio
