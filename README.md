@@ -29,9 +29,8 @@ Notes for day to day work.
 - [Minify Html] (https://github.com/deanhume/html-minifier)
 - [MySQL + EF6] (http://dan.cx/2015/08/entity-framework-6-mysql-aspnet)
 - [Strongly Typed Configuration Settings] (https://weblog.west-wind.com/posts/2016/May/23/Strongly-Typed-Configuration-Settings-in-ASPNET-Core)
-- [Secret Manager Tool] http://www.fiyazhasan.me/dont-share-your-secrets-asp-net-core-secret-manager-tool/
+- [Secret Manager Tool] (http://www.fiyazhasan.me/dont-share-your-secrets-asp-net-core-secret-manager-tool)
 - [SQL Lite + EF7] (http://damienbod.com/2015/08/30/asp-net-5-with-sqlite-and-entity-framework-7/)
-
 
 
 ## Git
