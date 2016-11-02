@@ -1,17 +1,21 @@
 # Developer Notes
 Notes for day to day work.
 
-1. [Asp.Net Core 1.0] (#aspnet-core-10)
-2. [Git] (#git)
-3. [SQL Server] (#sql-server)
-4. [WordPress] (#wordpress)
-5. [Let's Encrypt] (#lets-encrypt)
-6. [Azure] (#azure)
-7. [Linux] (#linux)
-8. [Knockout.js] (#knockoutjs)
-9. [Other Handy Tools] (#other-handy-tools)
-10. [Visual Studio 15] (#visual-studio-15)
-11. [Other] (#other)
+1. [C#] (#c# #)
+2. [Asp.Net Core 1.0] (#aspnet-core-10)
+3. [Git] (#git)
+4. [SQL Server] (#sql-server)
+5. [WordPress] (#wordpress)
+6. [Let's Encrypt] (#lets-encrypt)
+7. [Azure] (#azure)
+8. [Linux] (#linux)
+9. [Knockout.js] (#knockoutjs)
+10. [Other Handy Tools] (#other-handy-tools)
+11. [Visual Studio 15] (#visual-studio-15)
+12. [Other] (#other)
+
+## C# #
+- Delegate: NotifyMoving?.Invoke(Id);
  
 ## Asp.Net Core 1.0
 - _Layout.Mobile.cshtml
@@ -131,5 +135,5 @@ There will be a new IP Address added to the server after recovery.
 - .editorconfig - overrides personal preferences, use in teams
 
 ### Other
-- Print Spooler
+- Print Spooler - restart this service
 - Windows Audio
