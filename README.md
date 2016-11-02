@@ -1,7 +1,7 @@
 # Developer Notes
 Notes for day to day work.
 
-1. [C#] (#c#)
+1. [C#] (#c)
 2. [Asp.Net Core 1.0] (#aspnet-core-10)
 3. [Git] (#git)
 4. [SQL Server] (#sql-server)
