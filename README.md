@@ -114,6 +114,7 @@ There will be a new IP Address added to the server after recovery.
 - sudo command
 - df [-h] *..disk information*
 - yum install htop, check-update | apt-get update, upgrade, dist-upgrade
+- apt-get autoremove (removes unused packages, cleans boot partition)
 - reboot -h now
 - systemctl start/restart/status/stop/enable mariadb/waagent
 - tab+tab auto completition
