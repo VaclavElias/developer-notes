@@ -132,6 +132,8 @@ There will be a new IP Address added to the server after recovery.
 
 ### Other Handy Tools
 - http://hangfire.io/overview.html create, process and manage your background jobs
+- http://fontello.com/ font extract/combine
+- http://www.glyphrstudio.com/ edit svg font
 
 ### Visual Studio 15
 - .editorconfig - overrides personal preferences, use in teams
