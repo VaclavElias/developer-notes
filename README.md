@@ -82,6 +82,7 @@ Check Email | |
 
 ## Let's Encrypt
 - letsencrypt.exe --test
+- [Installation on .Net Core] (http://www.softfluent.com/blog/dev/2016/11/09/Using-Let-s-encrypt-with-ASP-NET-Core)
 
 ## Azure 
 ### VM
