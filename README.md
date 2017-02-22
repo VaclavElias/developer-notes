@@ -29,7 +29,7 @@ Notes for day to day work.
 - [HangFire] (http://hangfire.io/) - an easy way to perform background processing in .NET and .NET Core applications 
 - [Let's Encrypt in IIS] (https://weblog.west-wind.com/posts/2016/Feb/22/Using-Lets-Encrypt-with-IIS-on-Windows)
 - [Login/Logout through REST] (https://www.illucit.com/blog/2016/04/asp-net-5-mvc-6-identity-authentication/)
-- [Mailkit] (https://github.com/jstedfast/MailKit), [mail] (http://stevejgordon.co.uk/how-to-send-emails-in-asp-net-core-1-0)
+- [Mailkit] (https://github.com/jstedfast/MailKit), [mail] (http://stevejgordon.co.uk/how-to-send-emails-in-asp-net-core-1-0), [MailGun] (http://benjii.me/2017/02/send-email-using-asp-net-core/)
 - [Middleware - Sitemap] (http://dotnetthoughts.net/generate-dynamic-xml-sitemaps-in-aspnet5)
 - [Minify Html] (https://github.com/deanhume/html-minifier)
 - [MySQL + EF6] (http://dan.cx/2015/08/entity-framework-6-mysql-aspnet)
