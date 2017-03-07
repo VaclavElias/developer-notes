@@ -142,3 +142,4 @@ There will be a new IP Address added to the server after recovery.
 ### Other
 - Print Spooler - restart this service
 - Windows Audio
+- Feedback Polls - [HotJjar] (https://www.hotjar.com/polls)
