@@ -1,3 +1,6 @@
+# ToDo
+npm i -g npm
+
 # Developer Notes
 Notes for day to day work.
 
