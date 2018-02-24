@@ -68,6 +68,7 @@ CREATE CREDENTIAL YourNameCredential WITH IDENTITY='YourIdentity', SECRET='YourS
 BACKUP DATABASE DatabaseName TO URL = 'AzureUrl' WITH CREDENTIAL = 'YourNameCredential', FORMAT
 RESTORE DATABASE DatabaseName FROM URL ='AzureUrl' WITH CREDENTIAL = 'YourNameCredential', STATS= 5
 [, MOVE 'DatabaseName' to 'x:\data\DatabaseName.mdf' ,MOVE 'DatabaseNamelog' to 'x:\data\DatabaseName.ldf'] 
+SELECT percent_complete, estimated_completion_time, * FROM sys.dm_exec_requests
 ```
 
 ## WordPress
