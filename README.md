@@ -52,6 +52,7 @@ Notes for day to day work.
 - git config --global core.autocrlf true *..on Windows*
 
 ## SQL Server
+- DBCC FREEPROCCACHE, DBCC DROPCLEANBUFFERS - reset cache
 - STRING_SPLIT - returns table with a column named value (from SQL Server 2016)
 ```plsql
 SELECT * FROM STRING_SPLIT(‘Lorem ipsum dolor sit amet.’, ”)
