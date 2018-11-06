@@ -1,6 +1,6 @@
 # ToDo
 - npm i -g npm
-- Angular 5: npm install --save-dev @ngtools/webpack@latest
+- ng build --watch
 
 # Developer Notes
 Notes for day to day work.
