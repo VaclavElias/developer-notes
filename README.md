@@ -27,8 +27,6 @@ Notes for day to day work.
 - [ASP.NET Core Multi-tenancy](http://benfoster.io/blog/aspnet-core-multi-tenancy-data-isolation-with-entity-framework)
 - [Custom View Engine](http://weblogs.asp.net/imranbaloch/custom-viewengine-aspnet5-mvc6), [Custom Views](http://www.davepaquette.com/archive/2015/05/04/displaying-custom-asp-net-mvc-views-per-deployment.aspx)
 - [Data Encryption](https://docs.asp.net/en/latest/security/data-protection/using-data-protection.html)
-- [Dependecy Injection](http://odetocode.com/blogs/scott/archive/2016/02/18/avoiding-the-service-locator-pattern-in-asp-net-core.aspx)
-- [Google Capcha from CodeProject](http://www.codeproject.com/Articles/1018668/FETCH-Retrieve-data-from-a-remote-web-server-with), [Google Capcha example on YouTube](https://www.youtube.com/watch?v=HcSEU_BZwDw)
 - [HangFire](http://hangfire.io/) - an easy way to perform background processing in .NET and .NET Core applications 
 - [Let's Encrypt in IIS](https://weblog.west-wind.com/posts/2016/Feb/22/Using-Lets-Encrypt-with-IIS-on-Windows)
 - [Login/Logout through REST](https://www.illucit.com/blog/2016/04/asp-net-5-mvc-6-identity-authentication/)
