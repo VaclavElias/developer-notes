@@ -154,3 +154,4 @@ There will be a new IP Address added to the server after recovery.
 - Print Spooler - restart this service
 - Windows Audio
 - Feedback Polls - [HotJjar] (https://www.hotjar.com/polls)
+- Uninstall Telementry - rundll32 "%PROGRAMFILES%\NVIDIA Corporation\Installer2\InstallerCore\NVI2.DLL",UninstallPackage NvTelemetryContainer
