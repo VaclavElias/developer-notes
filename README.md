@@ -88,6 +88,7 @@ Check Email | |
 - tab+tab auto completition
 - midnight commander - Norton like Commander
 - ls -la list details
+- ip addr show
 
 ### Vi Editor
  - sudo vi /var/log/mariadb/mariadb.log 
@@ -95,6 +96,8 @@ Check Email | |
  - :q! - type to exit type
  - ZZ - exit & save
  - x - delete selected character
+ - dd - delete line
+ - Shift + Insert - Paste text
  
 ### cron
 ```30 1 * * * root /bin/systemctl stop httpd.service && (/opt/letsencrypt/letsencrypt-auto renew | tee -a /var/log/letsencrypt-renew.log) && /bin/systemctl start httpd.service```
