@@ -94,6 +94,7 @@ Check Email | |
  - G - end of file
  - :q! - type to exit type
  - ZZ - exit & save
+ - x - delete selected character
  
 ### cron
 ```30 1 * * * root /bin/systemctl stop httpd.service && (/opt/letsencrypt/letsencrypt-auto renew | tee -a /var/log/letsencrypt-renew.log) && /bin/systemctl start httpd.service```
