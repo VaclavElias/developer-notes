@@ -64,6 +64,9 @@ SELECT percent_complete, estimated_completion_time, * FROM sys.dm_exec_requests
 ```
 
 ## WordPress
+
+[Ubuntu Installation](https://websiteforstudents.com/install-wordpress-on-ubuntu-16-04-17-10-18-04-with-apache2-mariadb-php-7-2-and-lets-encrypt-ssl-tls/)
+
 Must plugins.
 
 Plugin Name | Author | Note
