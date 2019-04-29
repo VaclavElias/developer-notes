@@ -6,15 +6,16 @@
 Notes for day to day work.
 
 1. [C#](#c)
-2. [Asp.Net Core](#aspnet-core)
-3. [Git](#git)
-4. [SQL Server](#sql-server)
-5. [WordPress](#wordpress)
-6. [Linux](#linux)
-7. [Knockout.js](#knockoutjs)
-8. [Other Handy Tools](#other-handy-tools)
-9. [Visual Studio](#visual-studio)
-10. [Other](#other)
+1. [Asp.Net Core](#aspnet-core)
+1. [Azure](#azure)
+1. [Git](#git)
+1. [SQL Server](#sql-server)
+1. [WordPress](#wordpress)
+1. [Linux](#linux)
+1. [Knockout.js](#knockoutjs)
+1. [Other Handy Tools](#other-handy-tools)
+1. [Visual Studio](#visual-studio)
+1. [Other](#other)
 
 ## C# #
 - Delegate: NotifyMoving?.Invoke(Id);
@@ -32,6 +33,10 @@ Notes for day to day work.
 - [Minify Html](https://github.com/deanhume/html-minifier)
 - [Strongly Typed Configuration Settings](https://weblog.west-wind.com/posts/2016/May/23/Strongly-Typed-Configuration-Settings-in-ASPNET-Core)
 - [Secret Manager Tool](http://www.fiyazhasan.me/dont-share-your-secrets-asp-net-core-secret-manager-tool)
+
+## Azure
+### App Service
+- London - WEBSITE_TIME_ZONE:GMT Standard Time
 
 ## Git
 - git fetch origin
