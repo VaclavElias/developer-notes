@@ -111,7 +111,7 @@ Check Email | |
 ## Linux
 - sudo command
 - df [-h] *..disk information*
-- yum install htop, check-update | apt-get update, upgrade, dist-upgrade
+- yum install htop, check-update | apt update, apt upgrade, [apt full-upgrade], apt autoremove
 - apt-get autoremove (removes unused packages, cleans boot partition)
 - reboot -h now
 - systemctl start/restart/status/stop/enable mariadb/waagent
