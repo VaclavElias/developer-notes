@@ -111,8 +111,12 @@ Check Email | |
 ## Linux
 - sudo command
 - df [-h] *..disk information*
-- yum install htop, check-update | apt update, apt upgrade, [apt full-upgrade], apt autoremove
-- apt-get autoremove (removes unused packages, cleans boot partition)
+- yum install htop
+- updates CentOS, check-update
+- updates Ubuntu
+  - apt update, apt upgrade, [apt full-upgrade]
+  - apt autoremove (removes unused packages, cleans boot partition)
+  - systemctl restart apache2
 - reboot -h now
 - systemctl start/restart/status/stop/enable mariadb/waagent
 - tab+tab auto completition
