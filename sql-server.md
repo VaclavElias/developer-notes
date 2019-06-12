@@ -1,4 +1,4 @@
-## SQL Server
+# SQL Server
 - DBCC FREEPROCCACHE, DBCC DROPCLEANBUFFERS - reset cache
 - STRING_SPLIT - returns table with a column named value (from SQL Server 2016)
 ```sql
