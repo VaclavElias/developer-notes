@@ -1,4 +1,4 @@
-# ToDo
+## ToDo
 - npm i -g npm
 - ng build --watch
 
@@ -11,7 +11,7 @@ Notes for day to day work.
 1. [Git](#git)
 1. [SQL Server](sql-server.md)
 1. [WordPress](#wordpress)
-1. [Linux](#linux)
+1. [Linux](linux.md)
 1. [Knockout.js](#knockoutjs)
 1. [Other Handy Tools](#other-handy-tools)
 1. [Visual Studio](#visual-studio)
