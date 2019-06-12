@@ -9,7 +9,7 @@ Notes for day to day work.
 1. [Asp.Net Core](#aspnet-core)
 1. [Azure](#azure)
 1. [Git](#git)
-1. [SQL Server](https://github.com/VaclavElias/developer-notes/blob/master/sql-server.md)
+1. [SQL Server](sql-server.md)
 1. [WordPress](#wordpress)
 1. [Linux](#linux)
 1. [Knockout.js](#knockoutjs)
