@@ -40,3 +40,8 @@ WHERE indexstats.database_id = DB_ID()
 	AND avg_fragmentation_in_percent > 10
 ORDER BY indexstats.avg_fragmentation_in_percent desc
 ```
+- create rebuild index queries for Azure
+```sql
+SELECT 'ALTER INDEX ALL ON ['+ Table_schema+'].['+Table_name+'] REBUILD;' FROM  information_schema.tables 
+WHERE Table_schema!='sys'
+```
