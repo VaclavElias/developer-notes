@@ -44,4 +44,5 @@ ORDER BY indexstats.avg_fragmentation_in_percent desc
 ```sql
 SELECT 'ALTER INDEX ALL ON ['+ Table_schema+'].['+Table_name+'] REBUILD;' FROM  information_schema.tables 
 WHERE Table_schema!='sys'
+ORDER BY Table_schema, Table_name
 ```
