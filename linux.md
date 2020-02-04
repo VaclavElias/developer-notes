@@ -16,6 +16,9 @@
 - sudo -s (on Azure Ubuntu to switch to root)
 - putty - Shift + Insert - Paste text
 - swapon -s check swap file, if it doesn't exist, the waagent.conf might have been replaced
+  - ResourceDisk.Format=y
+  - ResourceDisk.EnableSwap=y
+  - ResourceDisk.SwapSizeMB=1024
 
 ## Vi Editor
  - sudo vi /var/log/mariadb/mariadb.log 
