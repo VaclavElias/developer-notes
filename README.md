@@ -38,6 +38,7 @@ Notes for day to day work.
 ### App Service
 - London - WEBSITE_TIME_ZONE:GMT Standard Time
 - Linux VM - [Add Swap](https://support.microsoft.com/en-gb/help/4010058/how-to-add-a-swap-file-in-linux-azure-virtual-machines)
+- Check Application Insight association - Logs -> customMetrics | where name == "HeartbeatState" | take 1
 
 ## Git
 - git fetch origin
