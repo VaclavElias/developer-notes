@@ -1,5 +1,5 @@
 ## ToDo
-- npm i -g npm
+- cc update
 - ng build --watch
 
 # Developer Notes
