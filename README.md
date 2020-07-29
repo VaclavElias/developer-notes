@@ -10,6 +10,7 @@ Notes for day to day work.
 1. [Azure](#azure)
 1. [Git](#git)
 1. [SQL Server](sql-server.md)
+1. [Bullhorn](#bullhorn)
 1. [WordPress](#wordpress)
 1. [Linux](linux.md)
 1. [Knockout.js](#knockoutjs)
@@ -49,6 +50,8 @@ Notes for day to day work.
 - git checkout develop *..switching*
 - git config --global core.autocrlf true *..on Windows*
 
+## Bulhorn
+- when running DELETE via API, it will only hard-delete entities that are hard-deletable such as Placements and Sendouts, and most entities that do not use an isDeleted field. In order to prevent important data being lost, many entities such as candidate data can only be soft-deleted via API.
 
 ## WordPress
 
