@@ -28,12 +28,9 @@ Notes for day to day work.
 - [Custom View Engine](http://weblogs.asp.net/imranbaloch/custom-viewengine-aspnet5-mvc6), [Custom Views](http://www.davepaquette.com/archive/2015/05/04/displaying-custom-asp-net-mvc-views-per-deployment.aspx)
 - [Data Encryption](https://docs.asp.net/en/latest/security/data-protection/using-data-protection.html)
 - [HangFire](http://hangfire.io/) - an easy way to perform background processing in .NET and .NET Core applications 
-- [Login/Logout through REST](https://www.illucit.com/blog/2016/04/asp-net-5-mvc-6-identity-authentication/)
 - [Mailkit](https://github.com/jstedfast/MailKit), [mail](http://stevejgordon.co.uk/how-to-send-emails-in-asp-net-core-1-0), [MailGun](http://benjii.me/2017/02/send-email-using-asp-net-core/)
 - [Middleware - Sitemap](http://dotnetthoughts.net/generate-dynamic-xml-sitemaps-in-aspnet5)
 - [Minify Html](https://github.com/deanhume/html-minifier)
-- [Strongly Typed Configuration Settings](https://weblog.west-wind.com/posts/2016/May/23/Strongly-Typed-Configuration-Settings-in-ASPNET-Core)
-- [Secret Manager Tool](http://www.fiyazhasan.me/dont-share-your-secrets-asp-net-core-secret-manager-tool)
 
 ## Azure
 ### App Service
@@ -50,7 +47,7 @@ Notes for day to day work.
 - git checkout develop *..switching*
 - git config --global core.autocrlf true *..on Windows*
 
-## Bulhorn
+## Bullhorn
 - when running DELETE via API, it will only hard-delete entities that are hard-deletable such as Placements and Sendouts, and most entities that do not use an isDeleted field. In order to prevent important data being lost, many entities such as candidate data can only be soft-deleted via API.
 
 ## WordPress
