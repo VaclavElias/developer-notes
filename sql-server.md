@@ -8,6 +8,11 @@ SELECT * FROM STRING_SPLIT(‘Lorem ipsum dolor sit amet.’, ”)
 ```sql
 SELECT Charindex(','+cast(id as varchar(8000))+',', @Ids)
 ```
+- Get all triggers
+```sql
+SELECT name,is_instead_of_trigger FROM sys.triggers WHERE type = 'TR'
+```
+
 - other handy bits
 ```sql
 EXEC sp_change_users_login 'UPDATE_ONE','something','something'
