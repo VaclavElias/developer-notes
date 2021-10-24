@@ -15,7 +15,7 @@ Notes for day to day work.
 1. [Linux](linux.md)
 1. [Knockout.js](#knockoutjs)
 1. [Other Handy Tools](#other-handy-tools)
-1. [Visual Studio](#visual-studio)
+1. [CSS](#css)
 1. [Other](#other)
 
 ## C# #
@@ -76,11 +76,18 @@ Check Email | |
 - http://fontello.com/ font extract/combine
 - http://www.glyphrstudio.com/ edit svg font
 
-## Visual Studio
-- .editorconfig - overrides personal preferences, use in teams
+## CSS
+```css
+.table-index tbody tr {
+  counter-increment: rowNumber; }
+
+.table-index tbody td:first-child {
+  text-align: center; }
+  .table-index tbody td:first-child::before {
+    content: counter(rowNumber);
+    font-size: 12px; }
+```
 
 ## Other
-- Print Spooler - restart this service
-- Windows Audio
 - Feedback Polls - [HotJjar] (https://www.hotjar.com/polls)
 - Uninstall Telementry - rundll32 "%PROGRAMFILES%\NVIDIA Corporation\Installer2\InstallerCore\NVI2.DLL",UninstallPackage NvTelemetryContainer
