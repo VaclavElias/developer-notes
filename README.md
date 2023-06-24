@@ -23,10 +23,13 @@ Notes for day to day work.
 - Delegate: NotifyMoving?.Invoke(Id);
 
 ## Installation
+- winget install -e --id Microsoft.WindowsTerminal
+- winget install -e --id Google.Chrome
 - winget install --id Git.Git -e --source winget
 - winget install -e --id GitHub.GitHubDesktop
 - winget install -e --id Ghisler.TotalCommander
 - winget install -e --id ScooterSoftware.BeyondCompare4
+- winget install -e --id IrfanSkiljan.IrfanView
  
 ## Asp.Net Core
 - _Layout.Mobile.cshtml
