@@ -6,6 +6,7 @@
 Notes for day to day work.
 
 1. [C#](#c)
+1. [Installation](installation)
 1. [Asp.Net Core](#aspnet-core)
 1. [Azure](#azure)
 1. [Git](#git)
@@ -20,6 +21,12 @@ Notes for day to day work.
 
 ## C# #
 - Delegate: NotifyMoving?.Invoke(Id);
+
+## Installation
+- winget install --id Git.Git -e --source winget
+- winget install -e --id GitHub.GitHubDesktop
+- winget install -e --id Ghisler.TotalCommander
+- winget install -e --id ScooterSoftware.BeyondCompare4
  
 ## Asp.Net Core
 - _Layout.Mobile.cshtml
