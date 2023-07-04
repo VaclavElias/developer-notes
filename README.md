@@ -31,6 +31,7 @@ Notes for day to day work.
 - winget install -e --id ScooterSoftware.BeyondCompare4
 - winget install -e --id IrfanSkiljan.IrfanView
 - winget install -e --id Adobe.Acrobat.Reader.64-bit
+- winget install -e --id OpenJS.NodeJS
  
 ## Asp.Net Core
 - _Layout.Mobile.cshtml
