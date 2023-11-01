@@ -32,6 +32,7 @@ Notes for day to day work.
 - winget install -e --id IrfanSkiljan.IrfanView
 - winget install -e --id Adobe.Acrobat.Reader.64-bit
 - winget install -e --id OpenJS.NodeJS
+- winget install -e --id Postman.Postman
  
 ## Asp.Net Core
 - _Layout.Mobile.cshtml
