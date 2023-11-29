@@ -23,6 +23,8 @@ Notes for day to day work.
 - Delegate: NotifyMoving?.Invoke(Id);
 
 ## Installation
+You need to install winget e.g. through Microsof Store.
+
 - winget install -e --id Microsoft.WindowsTerminal
 - winget install -e --id Google.Chrome
 - winget install --id Git.Git -e --source winget
