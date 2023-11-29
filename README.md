@@ -27,7 +27,7 @@ You need to install winget e.g. through Microsof Store.
 
 - winget install -e --id Microsoft.WindowsTerminal
 - winget install -e --id Google.Chrome
-- winget install --id Git.Git -e --source winget
+- winget install -e --id Git.Git --source winget
 - winget install -e --id GitHub.GitHubDesktop
 - winget install -e --id Ghisler.TotalCommander
 - winget install -e --id ScooterSoftware.BeyondCompare4
@@ -35,6 +35,8 @@ You need to install winget e.g. through Microsof Store.
 - winget install -e --id Adobe.Acrobat.Reader.64-bit
 - winget install -e --id OpenJS.NodeJS
 - winget install -e --id Postman.Postman
+- winget install -e --id Notepad++.Notepad++
+- winget install -e --id voidtools.Everything
  
 ## Asp.Net Core
 - _Layout.Mobile.cshtml
