@@ -6,7 +6,7 @@
 Notes for day to day work.
 
 1. [C#](#c)
-1. [Installation](installation)
+1. [Installation](#installation)
 1. [Asp.Net Core](#aspnet-core)
 1. [Azure](#azure)
 1. [Git](#git)
@@ -34,6 +34,7 @@ You need to install winget e.g. through Microsof Store.
 - winget install -e --id IrfanSkiljan.IrfanView
 - winget install -e --id Adobe.Acrobat.Reader.64-bit
 - winget install -e --id OpenJS.NodeJS
+- winget install -e --id Insomnia.Insomnia
 - winget install -e --id Postman.Postman
 - winget install -e --id Notepad++.Notepad++
 - winget install -e --id voidtools.Everything
