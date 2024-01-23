@@ -38,6 +38,9 @@ You need to install winget e.g. through Microsof Store.
 - winget install -e --id Postman.Postman
 - winget install -e --id Notepad++.Notepad++
 - winget install -e --id voidtools.Everything
+- winget install -e --id Microsoft.SQLServerManagementStudio
+
+### Other  
 - winget install -e --id Meltytech.Shotcut
 - winget install -e --id OBSProject.OBSStudio
  
