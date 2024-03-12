@@ -43,6 +43,7 @@ You need to install winget e.g. through Microsof Store.
 ### Other  
 - winget install -e --id Meltytech.Shotcut
 - winget install -e --id OBSProject.OBSStudio
+- winget install -e --id Telerik.Fiddler.Classic
  
 ## Asp.Net Core
 - _Layout.Mobile.cshtml
