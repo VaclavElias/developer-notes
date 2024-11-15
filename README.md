@@ -7,7 +7,6 @@ Notes for day to day work.
 
 1. [C#](#c)
 1. [Installation](#installation)
-1. [Asp.Net Core](#aspnet-core)
 1. [Azure](#azure)
 1. [Git](#git)
 1. [SQL Server](sql-server.md)
@@ -43,17 +42,6 @@ You need to install winget e.g. through Microsof Store - App Installer.
 - winget install -e --id OBSProject.OBSStudio
 - winget install -e --id Telerik.Fiddler.Classic
 - winget install -e --id Microsoft.VisualStudioCode
- 
-## Asp.Net Core
-- _Layout.Mobile.cshtml
-- [Asp.NET Core on Ubuntu - Multihosting](https://developingsoftware.com/aspnetcore-ubuntu#configure-nginx-as-a-reverse-proxy-to-asp.net-core) 
-- [ASP.NET Core Multi-tenancy](http://benfoster.io/blog/aspnet-core-multi-tenancy-data-isolation-with-entity-framework)
-- [Custom View Engine](http://weblogs.asp.net/imranbaloch/custom-viewengine-aspnet5-mvc6), [Custom Views](http://www.davepaquette.com/archive/2015/05/04/displaying-custom-asp-net-mvc-views-per-deployment.aspx)
-- [Data Encryption](https://docs.asp.net/en/latest/security/data-protection/using-data-protection.html)
-- [HangFire](http://hangfire.io/) - an easy way to perform background processing in .NET and .NET Core applications 
-- [Mailkit](https://github.com/jstedfast/MailKit), [mail](http://stevejgordon.co.uk/how-to-send-emails-in-asp-net-core-1-0), [MailGun](http://benjii.me/2017/02/send-email-using-asp-net-core/)
-- [Middleware - Sitemap](http://dotnetthoughts.net/generate-dynamic-xml-sitemaps-in-aspnet5)
-- [Minify Html](https://github.com/deanhume/html-minifier)
 
 ## Azure
 ### App Service
