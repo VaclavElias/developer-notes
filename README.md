@@ -14,8 +14,6 @@ Notes for day to day work.
 1. [Bullhorn](#bullhorn)
 1. [WordPress](#wordpress)
 1. [Linux](linux.md)
-1. [Knockout.js](#knockoutjs)
-1. [Other Handy Tools](#other-handy-tools)
 1. [CSS](#css)
 1. [Other](#other)
 
@@ -92,14 +90,6 @@ Transient Cleaner | Code Art | Clean expired transients from your options table
 Delete Expired Transients || crap stored as posts in db backup
 Antivirus | Sergej Muller |
 Check Email | |
-
-## Knockout.js
-- debug: ko.dataFor($0)
-
-## Other Handy Tools
-- http://hangfire.io/overview.html create, process and manage your background jobs
-- http://fontello.com/ font extract/combine
-- http://www.glyphrstudio.com/ edit svg font
 
 ## CSS
 ```css
