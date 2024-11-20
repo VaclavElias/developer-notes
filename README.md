@@ -1,7 +1,3 @@
-## ToDo
-- cc update
-- ng build --watch
-
 # Developer Notes
 Notes for day to day work.
 
@@ -42,6 +38,9 @@ You need to install winget e.g. through Microsof Store - App Installer.
 - winget install -e --id OBSProject.OBSStudio
 - winget install -e --id Telerik.Fiddler.Classic
 - winget install -e --id Microsoft.VisualStudioCode
+
+### Setup
+- [How to configure Visual Studio to use Beyond Compare](https://stackoverflow.com/questions/4466238/how-to-configure-visual-studio-to-use-beyond-compare)
 
 ## Azure
 ### App Service
