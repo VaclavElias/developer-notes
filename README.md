@@ -1,7 +1,6 @@
 # Developer Notes
 Notes for day to day work.
 
-1. [C#](#c)
 1. [Installation](#installation)
 1. [Azure](#azure)
 1. [Git](#git)
@@ -11,9 +10,6 @@ Notes for day to day work.
 1. [Linux](linux.md)
 1. [CSS](#css)
 1. [Other](#other)
-
-## C# #
-- Delegate: NotifyMoving?.Invoke(Id);
 
 ## Installation
 You need to install winget e.g. through Microsof Store - App Installer.
