@@ -38,6 +38,7 @@ You need to install winget e.g. through Microsof Store - App Installer.
 ### Setup
 - [How to configure Visual Studio to use Beyond Compare](https://stackoverflow.com/questions/4466238/how-to-configure-visual-studio-to-use-beyond-compare)
 - [Options to optimize gaming performance in Windows 11](https://support.microsoft.com/en-us/windows/options-to-optimize-gaming-performance-in-windows-11-a255f612-2949-4373-a566-ff6f3f474613)
+- [Possible exclusions](https://gist.github.com/Braytiner/be2497d1a06f5a9d943dc7760693d460)
 
 ## Azure
 ### App Service
