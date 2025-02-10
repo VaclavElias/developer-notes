@@ -25,6 +25,8 @@ SELECT percent_complete, estimated_completion_time, * FROM sys.dm_exec_requests
 ```
 - check index fragmentation
 ```sql
+-- reorganise row_count <= 10,000
+-- rebuild row_count > 10,000
 SELECT dbschemas.[name] as 'Schema',
 dbtables.[name] as 'Table',
 dbindexes.[name] as 'Index',
