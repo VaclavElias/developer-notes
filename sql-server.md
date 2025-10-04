@@ -23,29 +23,46 @@ RESTORE DATABASE DatabaseName FROM URL ='AzureUrl' WITH CREDENTIAL = 'YourNameCr
 [, MOVE 'DatabaseName' to 'x:\data\DatabaseName.mdf' ,MOVE 'DatabaseNamelog' to 'x:\data\DatabaseName.ldf'] 
 SELECT percent_complete, estimated_completion_time, * FROM sys.dm_exec_requests
 ```
-- check index fragmentation
+- check index fragmentation and table size
 ```sql
 -- reorganise row_count <= 10,000
 -- rebuild row_count > 10,000
-SELECT dbschemas.[name] as 'Schema',
-dbtables.[name] as 'Table',
-dbindexes.[name] as 'Index',
-indexstats.avg_fragmentation_in_percent,
-indexstats.page_count,
-s.row_count
+-- reorganise row_count <= 10,000
+-- rebuild row_count > 10,000
+SELECT 
+    dbschemas.[name] AS [Schema],
+    dbtables.[name] AS [Table],
+    dbindexes.[name] AS [Index],
+    indexstats.avg_fragmentation_in_percent,
+    indexstats.page_count,
+    s.row_count,
+    CAST(SUM(ps.used_page_count) * 8.0 / 1024 AS DECIMAL(10,2)) AS TableSizeMB
 FROM sys.dm_db_index_physical_stats (DB_ID(), NULL, NULL, NULL, NULL) AS indexstats
-INNER JOIN sys.tables dbtables on dbtables.[object_id] = indexstats.[object_id]
-INNER JOIN sys.schemas dbschemas on dbtables.[schema_id] = dbschemas.[schema_id]
-INNER JOIN sys.indexes AS dbindexes ON dbindexes.[object_id] = indexstats.[object_id]
-AND indexstats.index_id = dbindexes.index_id
-JOIN sys.dm_db_partition_stats s ON dbtables.object_id = s.object_id
-	AND dbtables.type_desc = 'USER_TABLE'
-	AND dbtables.name not like '%dss%'
-	AND s.index_id IN (0,1)
+INNER JOIN sys.tables AS dbtables 
+    ON dbtables.[object_id] = indexstats.[object_id]
+INNER JOIN sys.schemas AS dbschemas 
+    ON dbtables.[schema_id] = dbschemas.[schema_id]
+INNER JOIN sys.indexes AS dbindexes 
+    ON dbindexes.[object_id] = indexstats.[object_id]
+   AND indexstats.index_id = dbindexes.index_id
+JOIN sys.dm_db_partition_stats AS s 
+    ON dbtables.[object_id] = s.[object_id]
+   AND s.index_id IN (0,1)
+JOIN sys.dm_db_partition_stats AS ps 
+    ON dbtables.[object_id] = ps.[object_id]
 WHERE indexstats.database_id = DB_ID()
-	AND dbindexes.[name] IS NOT NULL
-	AND avg_fragmentation_in_percent > 10
-ORDER BY indexstats.avg_fragmentation_in_percent desc
+  AND dbindexes.[name] IS NOT NULL
+  AND dbtables.[type_desc] = 'USER_TABLE'
+  AND dbtables.[name] NOT LIKE '%dss%'
+  AND indexstats.avg_fragmentation_in_percent > 10
+GROUP BY 
+    dbschemas.[name],
+    dbtables.[name],
+    dbindexes.[name],
+    indexstats.avg_fragmentation_in_percent,
+    indexstats.page_count,
+    s.row_count
+ORDER BY indexstats.avg_fragmentation_in_percent DESC;
 ```
 - create rebuild index queries for Azure
 ```sql
