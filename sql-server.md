@@ -27,8 +27,6 @@ SELECT percent_complete, estimated_completion_time, * FROM sys.dm_exec_requests
 ```sql
 -- reorganise row_count <= 10,000
 -- rebuild row_count > 10,000
--- reorganise row_count <= 10,000
--- rebuild row_count > 10,000
 SELECT 
     dbschemas.[name] AS [Schema],
     dbtables.[name] AS [Table],
