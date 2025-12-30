@@ -75,25 +75,58 @@ ORDER BY Table_schema, Table_name
 - missing indexes
 ```sql
 SELECT
-   CONVERT (varchar, getdate(), 126) AS runtime
-   , mig.index_group_handle
-   , mid.index_handle
-   , CONVERT (decimal (28,1), migs.avg_total_user_cost * migs.avg_user_impact *
-        (migs.user_seeks + migs.user_scans)) AS improvement_measure
-   , 'CREATE INDEX missing_index_' + CONVERT (varchar, mig.index_group_handle) + '_' +
-        CONVERT (varchar, mid.index_handle) + ' ON ' + mid.statement + '
-        (' + ISNULL (mid.equality_columns,'')
+    CONVERT(varchar, GETDATE(), 126) AS runtime,
+    SCHEMA_NAME(o.schema_id) AS [Schema],
+    OBJECT_NAME(mid.[object_id], mid.database_id) AS TableName,
+    CAST(SUM(ps.used_page_count) * 8.0 / 1024 AS DECIMAL(10,2)) AS TableSizeMB,
+    CONVERT(DECIMAL(28,1), migs.avg_total_user_cost * migs.avg_user_impact *
+        (migs.user_seeks + migs.user_scans)) AS improvement_measure,
+    migs.user_seeks,
+    migs.user_scans,
+    migs.avg_total_user_cost,
+    migs.avg_user_impact,
+    'CREATE INDEX [IX_' + OBJECT_NAME(mid.[object_id], mid.database_id) + '_' + 
+        CONVERT(varchar, mig.index_group_handle) + '_' +
+        CONVERT(varchar, mid.index_handle) + '] ON ' + mid.statement + '
+        (' + ISNULL(mid.equality_columns, '')
         + CASE WHEN mid.equality_columns IS NOT NULL
         AND mid.inequality_columns IS NOT NULL
-        THEN ',' ELSE '' END + ISNULL (mid.inequality_columns, '') + ')'
-        + ISNULL (' INCLUDE (' + mid.included_columns + ')', '') AS create_index_statement
-   , migs.*
-   , mid.database_id
-   , mid.[object_id]
+        THEN ', ' ELSE '' END + ISNULL(mid.inequality_columns, '') + ')'
+        + ISNULL(' INCLUDE (' + mid.included_columns + ')', '') + ';' AS create_index_statement,
+    mid.equality_columns,
+    mid.inequality_columns,
+    mid.included_columns,
+    migs.unique_compiles,
+    migs.last_user_seek,
+    migs.last_user_scan,
+    mig.index_group_handle,
+    mid.index_handle
 FROM sys.dm_db_missing_index_groups AS mig
-   INNER JOIN sys.dm_db_missing_index_group_stats AS migs
-      ON migs.group_handle = mig.index_group_handle
-   INNER JOIN sys.dm_db_missing_index_details AS mid
-      ON mig.index_handle = mid.index_handle
- ORDER BY migs.avg_total_user_cost * migs.avg_user_impact * (migs.user_seeks + migs.user_scans) DESC
+INNER JOIN sys.dm_db_missing_index_group_stats AS migs
+    ON migs.group_handle = mig.index_group_handle
+INNER JOIN sys.dm_db_missing_index_details AS mid
+    ON mig.index_handle = mid.index_handle
+INNER JOIN sys.objects AS o
+    ON mid.[object_id] = o.[object_id]
+INNER JOIN sys.dm_db_partition_stats AS ps
+    ON mid.[object_id] = ps.[object_id]
+WHERE mid.database_id = DB_ID()
+GROUP BY 
+    o.schema_id,
+    mid.[object_id],
+    mid.database_id,
+    migs.avg_total_user_cost,
+    migs.avg_user_impact,
+    migs.user_seeks,
+    migs.user_scans,
+    mid.statement,
+    mid.equality_columns,
+    mid.inequality_columns,
+    mid.included_columns,
+    migs.unique_compiles,
+    migs.last_user_seek,
+    migs.last_user_scan,
+    mig.index_group_handle,
+    mid.index_handle
+ORDER BY improvement_measure DESC;
 ```
