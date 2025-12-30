@@ -25,17 +25,28 @@ SELECT percent_complete, estimated_completion_time, * FROM sys.dm_exec_requests
 ```
 - check index fragmentation and table size
 ```sql
--- reorganise row_count <= 10,000
--- rebuild row_count > 10,000
+-- reorganise row_count <= 10,000 AND fragmentation > 10%
+-- rebuild row_count > 10,000 AND fragmentation > 10%
+
 SELECT 
     dbschemas.[name] AS [Schema],
     dbtables.[name] AS [Table],
     dbindexes.[name] AS [Index],
-    indexstats.avg_fragmentation_in_percent,
-    indexstats.page_count,
+    ROUND(indexstats.avg_fragmentation_in_percent, 0) [Fragm %],
+    indexstats.page_count [PageCount],
     s.row_count,
-    CAST(SUM(ps.used_page_count) * 8.0 / 1024 AS DECIMAL(10,2)) AS TableSizeMB
-FROM sys.dm_db_index_physical_stats (DB_ID(), NULL, NULL, NULL, NULL) AS indexstats
+    CAST(s.used_page_count * 8.0 / 1024 AS DECIMAL(10,2)) AS IndexSizeMB,
+    CASE 
+        WHEN s.row_count <= 10000 THEN 'REORGANIZE'
+        ELSE 'REBUILD'
+    END AS [Recomm.Action],
+    CASE 
+        WHEN s.row_count <= 10000 THEN 
+            'ALTER INDEX [' + dbindexes.[name] + '] ON [' + dbschemas.[name] + '].[' + dbtables.[name] + '] REORGANIZE;'
+        ELSE 
+            'ALTER INDEX [' + dbindexes.[name] + '] ON [' + dbschemas.[name] + '].[' + dbtables.[name] + '] REBUILD;' --  WITH (ONLINE = OFF)
+    END AS MaintenanceCommand
+FROM sys.dm_db_index_physical_stats (DB_ID(), NULL, NULL, NULL, 'LIMITED') AS indexstats
 INNER JOIN sys.tables AS dbtables 
     ON dbtables.[object_id] = indexstats.[object_id]
 INNER JOIN sys.schemas AS dbschemas 
@@ -43,24 +54,17 @@ INNER JOIN sys.schemas AS dbschemas
 INNER JOIN sys.indexes AS dbindexes 
     ON dbindexes.[object_id] = indexstats.[object_id]
    AND indexstats.index_id = dbindexes.index_id
-JOIN sys.dm_db_partition_stats AS s 
+INNER JOIN sys.dm_db_partition_stats AS s 
     ON dbtables.[object_id] = s.[object_id]
-   AND s.index_id IN (0,1)
-JOIN sys.dm_db_partition_stats AS ps 
-    ON dbtables.[object_id] = ps.[object_id]
+   AND s.index_id = dbindexes.index_id
 WHERE indexstats.database_id = DB_ID()
   AND dbindexes.[name] IS NOT NULL
   AND dbtables.[type_desc] = 'USER_TABLE'
   AND dbtables.[name] NOT LIKE '%dss%'
   AND indexstats.avg_fragmentation_in_percent > 10
-GROUP BY 
-    dbschemas.[name],
-    dbtables.[name],
-    dbindexes.[name],
-    indexstats.avg_fragmentation_in_percent,
-    indexstats.page_count,
-    s.row_count
+  AND indexstats.page_count > 1000  -- Ignore very small indexes
 ORDER BY indexstats.avg_fragmentation_in_percent DESC;
+
 ```
 - create rebuild index queries for Azure
 ```sql
