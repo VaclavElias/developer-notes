@@ -71,9 +71,11 @@ ORDER BY indexstats.avg_fragmentation_in_percent DESC;
 SELECT 'ALTER INDEX ALL ON ['+ Table_schema+'].['+Table_name+'] REBUILD;' FROM  information_schema.tables 
 WHERE Table_schema!='sys'
 ORDER BY Table_schema, Table_name
+
 ```
 - missing indexes
 ```sql
+-- Re-run periodically (monthly/quarterly) to catch new patterns
 SELECT
     CONVERT(varchar, GETDATE(), 126) AS runtime,
     SCHEMA_NAME(o.schema_id) AS [Schema],
