@@ -53,6 +53,7 @@ You need to install winget e.g. through Microsof Store - App Installer.
 - git tag -a v1.1.0.4rtm -m "Release version"
 - git push origin master
 - git push --tags
+- git fetch --prune
 - git checkout develop *..switching*
 - git config --global core.autocrlf true *..on Windows*
 
