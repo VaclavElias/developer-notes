@@ -9,7 +9,6 @@ Notes for day to day work.
 1. [WordPress](#wordpress)
 1. [Linux](linux.md)
 1. [CSS](#css)
-1. [Other](#other)
 
 ## Installation
 You need to install winget e.g. through Microsof Store - App Installer.
@@ -89,7 +88,3 @@ Check Email | |
     content: counter(rowNumber);
     font-size: 12px; }
 ```
-
-## Other
-- Feedback Polls - [HotJjar] (https://www.hotjar.com/polls)
-- Uninstall Telementry - rundll32 "%PROGRAMFILES%\NVIDIA Corporation\Installer2\InstallerCore\NVI2.DLL",UninstallPackage NvTelemetryContainer
