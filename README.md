@@ -28,7 +28,7 @@ You need to install winget e.g. through Microsof Store - App Installer.
 - winget install -e --id Notepad++.Notepad++
 - winget install -e --id voidtools.Everything
 - winget install -e --id Microsoft.SQLServerManagementStudio
-- winget install Anthropic.ClaudeCode
+- winget install -e --id Anthropic.ClaudeCode
 
 ### Other  
 - winget install -e --id Meltytech.Shotcut
