@@ -1,4 +1,25 @@
 # Linux
+
+## wsl
+
+- wsl --install Ubuntu-26.04
+- sudo apt update && sudo apt upgrade -y
+- sudo apt install -y dotnet-sdk-10.0
+- wsl --shutdown
+- wsl --export Ubuntu-26.04 D:\Data\ubuntu-26-dotnet10.tar
+- wsl --unregister Ubuntu-26.04
+- wsl --import Ubuntu-26.04 C:\WSL\Ubuntu-26.04 D:\Data\ubuntu-26-dotnet10.tar
+
+## stride.cli
+
+- dotnet tool install stride.cli
+- dotnet stride sdk install 4.4.0-beta6
+- dotnet stride new stride-game -n mygame01
+- cd mygame01
+- dotnet build
+
+## Other
+
 - sudo command
 - df [-h] *..disk information*
 - yum install htop
