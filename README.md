@@ -58,7 +58,9 @@ You need to install winget e.g. through Microsof Store - App Installer.
 - git checkout develop *..switching*
 - git config --global core.autocrlf true *..on Windows*
 
-## Hyper-v
+## Hyper-v 
+
+### Linux
 
 ```
 Get-VMSwitch | Select-Object Name, SwitchType    # find your switch name first
@@ -76,6 +78,34 @@ Set-VMMemory -VMName $vm -DynamicMemoryEnabled $false
 Set-VMFirmware -VMName $vm -SecureBootTemplate MicrosoftUEFICertificateAuthority
 Add-VMDvdDrive -VMName $vm -Path $iso
 Set-VMFirmware -VMName $vm -FirstBootDevice (Get-VMDvdDrive -VMName $vm)
+Start-VM -Name $vm
+```
+
+Windows
+
+```
+$vm     = 'Windows 11'
+$root   = 'D:\Data\windows11'
+$iso    = 'D:\Data\iso\Win11_25H2_EnglishInternational_x64_v2.iso'
+$switch = 'Live Connection'
+
+New-VM -Name $vm -Generation 2 -MemoryStartupBytes 8GB -Path $root `
+       -NewVHDPath "$root\$vm\Virtual Hard Disks\$vm.vhdx" -NewVHDSizeBytes 120GB `
+       -SwitchName $switch
+
+Set-VM -Name $vm -ProcessorCount 4 -AutomaticCheckpointsEnabled $false
+Set-VMMemory -VMName $vm -DynamicMemoryEnabled $false
+
+# Windows 11 needs TPM 2.0. The key protector must exist before the TPM can be turned on.
+Set-VMKeyProtector -VMName $vm -NewLocalKeyProtector
+Enable-VMTPM -VMName $vm
+
+Set-VMFirmware -VMName $vm -SecureBootTemplate MicrosoftWindows -EnableSecureBoot On
+Add-VMDvdDrive -VMName $vm -Path $iso
+Set-VMFirmware -VMName $vm -FirstBootDevice (Get-VMDvdDrive -VMName $vm)
+Enable-VMIntegrationService -VMName $vm -Name 'Guest Service Interface'
+
+vmconnect.exe localhost $vm
 Start-VM -Name $vm
 ```
 
