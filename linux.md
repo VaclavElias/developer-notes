@@ -24,6 +24,7 @@
 
 ## stride.cli
 
+- sudo apt install -y libgomp1 (might be removed)
 - dotnet tool install stride.cli
 - dotnet stride sdk install 4.4.0-beta6
 - dotnet stride new stride-game -n mygame01
