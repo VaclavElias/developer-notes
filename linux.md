@@ -10,6 +10,18 @@
 - wsl --unregister Ubuntu-26.04
 - wsl --import Ubuntu-26.04 C:\WSL\Ubuntu-26.04 D:\Data\ubuntu-26-dotnet10.tar
 
+### .NET
+- sudo apt install -y libicu78
+- curl -sSL https://dot.net/v1/dotnet-install.sh -o /tmp/dotnet-install.sh
+- bash /tmp/dotnet-install.sh --channel 10.0.4xx
+- echo 'export DOTNET_ROOT=$HOME/.dotnet' >> ~/.bashrc
+    - appends DOTNET_ROOT to your shell startup file
+- echo 'export PATH=$DOTNET_ROOT:$DOTNET_ROOT/tools:$PATH' >> ~/.bashrc
+    -  puts that folder at the front of your PATH
+- source ~/.bashrc
+    - applies both lines to the terminal you are sitting in
+- 
+
 ## stride.cli
 
 - dotnet tool install stride.cli
