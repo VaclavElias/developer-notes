@@ -8,6 +8,7 @@ Notes for day to day work.
 1. [Bullhorn](#bullhorn)
 1. [WordPress](#wordpress)
 1. [Linux](linux.md)
+2. [Hyper-V](#hyper-v)
 1. [CSS](#css)
 
 ## Installation
@@ -56,6 +57,27 @@ You need to install winget e.g. through Microsof Store - App Installer.
 - git fetch --prune
 - git checkout develop *..switching*
 - git config --global core.autocrlf true *..on Windows*
+
+## Hyper-v
+
+```
+Get-VMSwitch | Select-Object Name, SwitchType    # find your switch name first
+
+$vm     = 'Ubuntu 26.04'
+$root   = 'D:\Data\ubuntu'
+$iso    = 'D:\Data\iso\ubuntu-26.04.1-desktop-amd64.iso'
+$switch = 'Live Connection'
+
+New-VM -Name $vm -Generation 2 -MemoryStartupBytes 8GB -Path $root `
+       -NewVHDPath "$root\$vm\Virtual Hard Disks\$vm.vhdx" -NewVHDSizeBytes 120GB `
+       -SwitchName $switch
+Set-VM -Name $vm -ProcessorCount 6 -AutomaticCheckpointsEnabled $false
+Set-VMMemory -VMName $vm -DynamicMemoryEnabled $false
+Set-VMFirmware -VMName $vm -SecureBootTemplate MicrosoftUEFICertificateAuthority
+Add-VMDvdDrive -VMName $vm -Path $iso
+Set-VMFirmware -VMName $vm -FirstBootDevice (Get-VMDvdDrive -VMName $vm)
+Start-VM -Name $vm
+```
 
 ## Bullhorn
 - when running DELETE via API, it will only hard-delete entities that are hard-deletable such as Placements and Sendouts, and most entities that do not use an isDeleted field. In order to prevent important data being lost, many entities such as candidate data can only be soft-deleted via API.
