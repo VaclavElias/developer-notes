@@ -6,7 +6,7 @@
 - sudo apt update && sudo apt upgrade -y
 - sudo apt install -y dotnet-sdk-10.0
 - wsl --shutdown
-- wsl --export Ubuntu-26.04 D:\Data\ubuntu-26-dotnet10.tar
+- wsl --export Ubuntu-26.04 D:\Data\wsl-ubuntu-26-dotnet10.tar
 - wsl --unregister Ubuntu-26.04
 - wsl --import Ubuntu-26.04 C:\WSL\Ubuntu-26.04 D:\Data\ubuntu-26-dotnet10.tar
 
