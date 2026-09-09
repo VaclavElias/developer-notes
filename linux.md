@@ -17,7 +17,18 @@
 - dotnet stride new stride-game -n mygame01
 - cd mygame01
 - dotnet build
+- dotnet run --project mygame01.Linux/mygame01.Linux.csprojc
 
+## issues
+- copy to .nuget\packages\stride.assetcompiler\4.4.0-beta6\tools\net10.0\
+- Stride.Physics: libbulletc -> libbulletc.so
+- Stride.Assets: stride_vhacd -> stride_vhacd.so
+- Stride.Graphics: freetype -> libfreetype.so
+- Stride.TextureConverter: libastcenc.so
+- Stride.TextureConverter: stride_directxtex -> stride_directxtex.so
+    - sudo apt install libgomp1
+    - document libgomp1 as a Linux prerequisite
+      
 ## Other
 
 - sudo command
