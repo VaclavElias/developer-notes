@@ -19,7 +19,7 @@ You need to install winget e.g. through Microsof Store - App Installer.
 - winget install -e --id Git.Git --source winget
 - winget install -e --id GitHub.GitHubDesktop
 - winget install -e --id Ghisler.TotalCommander
-- winget install -e --id ScooterSoftware.BeyondCompare4
+- winget install -e --id ScooterSoftware.BeyondCompare5
 - winget install -e --id IrfanSkiljan.IrfanView
   - webp plug-in not included
 - winget install -e --id Adobe.Acrobat.Reader.64-bit
