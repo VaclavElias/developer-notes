@@ -12,31 +12,61 @@ Notes for day to day work.
 1. [CSS](#css)
 
 ## Installation
+
 You need to install winget e.g. through Microsof Store - App Installer.
 
-- winget install -e --id Microsoft.WindowsTerminal
-- winget install -e --id Google.Chrome
-- winget install -e --id Git.Git --source winget
-- winget install -e --id GitHub.GitHubDesktop
-- winget install -e --id Ghisler.TotalCommander
-- winget install -e --id ScooterSoftware.BeyondCompare.5
-- winget install -e --id IrfanSkiljan.IrfanView
-  - webp plug-in not included
-- winget install -e --id Adobe.Acrobat.Reader.64-bit
-- winget install -e --id OpenJS.NodeJS
-- winget install -e --id Insomnia.Insomnia
-- winget install -e --id Postman.Postman
-- winget install -e --id Notepad++.Notepad++
-- winget install -e --id voidtools.Everything
-- winget install -e --id Microsoft.SQLServerManagementStudio
-- winget install -e --id Anthropic.ClaudeCode
-- winget install -e --id Anthropic.Claude
+```
+winget install -e --id Microsoft.WindowsTerminal
+winget install -e --id Google.Chrome
+winget install -e --id Git.Git --source winget
+winget install -e --id GitHub.GitHubDesktop
+winget install -e --id Ghisler.TotalCommander
+winget install -e --id ScooterSoftware.BeyondCompare.5
+winget install -e --id IrfanSkiljan.IrfanView
+# webp plug-in not included
+winget install -e --id Adobe.Acrobat.Reader.64-bit
+winget install -e --id OpenJS.NodeJS
+winget install -e --id Insomnia.Insomnia
+winget install -e --id Postman.Postman
+winget install -e --id Notepad++.Notepad++
+winget install -e --id voidtools.Everything
+winget install -e --id Microsoft.SQLServerManagementStudio
+winget install -e --id Anthropic.ClaudeCode
+winget install -e --id Anthropic.Claude
+```
 
 ### Other  
-- winget install -e --id Meltytech.Shotcut
-- winget install -e --id OBSProject.OBSStudio
-- winget install -e --id Telerik.Fiddler.Classic
-- winget install -e --id Microsoft.VisualStudioCode
+
+```
+winget install -e --id Meltytech.Shotcut
+winget install -e --id OBSProject.OBSStudio
+winget install -e --id Telerik.Fiddler.Classic
+winget install -e --id Microsoft.VisualStudioCode
+```
+
+#### Upgrade
+
+```
+winget upgrade
+winget upgrade Adobe.Acrobat.Reader.64-bit
+winget upgrade Git.Git
+winget upgrade GitHub.GitHubDesktop
+winget upgrade Ghisler.TotalCommander
+winget upgrade Google.Chrome
+winget upgrade Insomnia.Insomnia
+winget upgrade IrfanSkiljan.IrfanView
+winget upgrade Microsoft.Azure.StorageExplorer
+winget upgrade Microsoft.msodbcsql.18
+winget upgrade Microsoft.PowerToys
+winget upgrade Microsoft.SQLServer.OLEDBDriver
+winget upgrade Microsoft.VisualStudioCode
+winget upgrade Microsoft.WindowsTerminal
+winget upgrade OpenJS.NodeJS
+winget upgrade Postman.Postman
+winget upgrade ScooterSoftware.BeyondCompare.5
+winget upgrade Zoom.Zoom.EXE
+winget upgrade
+```
 
 ### Setup
 - [How to configure Visual Studio to use Beyond Compare](https://stackoverflow.com/questions/4466238/how-to-configure-visual-studio-to-use-beyond-compare)
