@@ -49,9 +49,10 @@ winget install -e --id Microsoft.VisualStudioCode
 ```
 winget upgrade
 winget upgrade Adobe.Acrobat.Reader.64-bit
-winget upgrade Git.Git
-winget upgrade GitHub.GitHubDesktop
 winget upgrade Ghisler.TotalCommander
+winget upgrade Git.Git
+winget upgrade GitHub.cli
+winget upgrade GitHub.GitHubDesktop
 winget upgrade Google.Chrome
 winget upgrade Insomnia.Insomnia
 winget upgrade IrfanSkiljan.IrfanView
@@ -59,13 +60,20 @@ winget upgrade Microsoft.Azure.StorageExplorer
 winget upgrade Microsoft.msodbcsql.18
 winget upgrade Microsoft.PowerToys
 winget upgrade Microsoft.SQLServer.OLEDBDriver
+winget upgrade Microsoft.SQLServer.OLEDBDriver.18
 winget upgrade Microsoft.VisualStudioCode
 winget upgrade Microsoft.WindowsTerminal
+winget upgrade Notepad++.Notepad++
 winget upgrade OpenJS.NodeJS
 winget upgrade Postman.Postman
 winget upgrade ScooterSoftware.BeyondCompare.5
 winget upgrade Zoom.Zoom.EXE
 winget upgrade
+```
+
+```
+winget upgrade OBSProject.OBSStudio
+winget upgrade JetBrains.Rider
 ```
 
 ### Setup
