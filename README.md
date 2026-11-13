@@ -94,6 +94,7 @@ winget upgrade JetBrains.Rider
 - git push origin master
 - git push --tags
 - git fetch --prune
+- git fetch upstream --prune
 - git checkout develop *..switching*
 - git config --global core.autocrlf true *..on Windows*
 
