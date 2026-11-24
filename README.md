@@ -86,6 +86,15 @@ winget upgrade JetBrains.Rider
 - London - WEBSITE_TIME_ZONE:GMT Standard Time
 - Linux VM - [Add Swap](https://support.microsoft.com/en-gb/help/4010058/how-to-add-a-swap-file-in-linux-azure-virtual-machines)
 - Check Application Insight association - Logs -> customMetrics | where name == "HeartbeatState" | take 1
+- Create named app service
+ ```
+az webapp create \
+  --name <your-new-subdomain> \
+  --resource-group <your-resource-group> \
+  --plan <your-existing-b2-plan-name> \
+  --runtime "DOTNETCORE:10.0" \
+  --https-only true
+ ```  
 
 ## Git
 - git fetch origin
